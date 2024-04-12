@@ -6,9 +6,9 @@
       🚀 Connect SpringBoot & Flask
 
 ### Content
-  [1. ⚙️ Environment Settings](⚙️-Environment-Settings) <br>
-  [2. 🏃🏻‍♀️ Run Flask Server](🏃🏻‍♀️-Run-Flask-Server) <br>
-  [3. 🍃 SpringBoot 연동 Test](🍃-SpringBoot-연동-Test)
+  [1. ⚙️ Environment Settings](#⚙️-Environment-Settings) <br>
+  [2. 🏃🏻‍♀️ Run Flask Server](#🏃🏻‍♀️-Run-Flask-Server) <br>
+  [3. 🍃 SpringBoot 연동 Test](#🍃-SpringBoot-연동-Test)
 
 <br>
 <br>
@@ -148,8 +148,8 @@
 
   **2. [for-me-classification/springtest]()**
   * 위 디렉토리의 테스트 코드 받아서 for-me 프로젝트에 넣기 <br>
-      `TestController.java  # directory = for-me\forme\src\main\java\me\forme\springdeveloper\controller\TestController.java` <br>
-      `FlaskClientService.java  # directory = for-me\forme\src\main\java\me\forme\springdeveloper\service\FlaskClientService.java`
+      `TestController.java  # directory = controller\TestController.java` <br>
+      `FlaskClientService.java  # directory = service\FlaskClientService.java`
   
   **3. [for-me](https://github.com/ongsim0629/for-me) Spring 서버 켜기 (Backend)**
   * Run `SpringDeveloperApplication.java`
