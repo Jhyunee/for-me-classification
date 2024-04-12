@@ -149,7 +149,7 @@
   * app.py 실행
   * `localhost:5000/test` 접속
 
-  **2. [for-me-classification/springtest]()**
+  **2. [for-me-classification/springtest](https://github.com/Jhyunee/for-me-classification/tree/main/springtest)**
   * 위 디렉토리의 테스트 코드 받아서 for-me 프로젝트에 넣기 <br>
       `TestController.java  # directory = controller\TestController.java` <br>
       `FlaskClientService.java  # directory = service\FlaskClientService.java`
