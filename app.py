@@ -5,8 +5,12 @@ from model import predict  # model.py에서 predict 함수 가져오기
 
 app = Flask(__name__)
 
-@app.route('/test') # /
+@app.route('/')
 def home():
+    return '성공!!'
+
+@app.route('/test')
+def test():
     test_data = '코딩테스트 공부하기'
     pred = predict(test_data)
     return pred
