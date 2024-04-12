@@ -2,7 +2,7 @@
 **[[2024-1 KGU Capstone Project]](https://github.com/Jhyunee/for-me) koBERT 모델을 이용한 다중 분류 모델** <br>
 
 ### In this repository ... <br>
-      🚀 Run pytorch Classification model on Flask Server <br>
+      🚀 Run pytorch Classification model on Flask Server
       🚀 Connect SpringBoot & Flask
 
 ### Content
