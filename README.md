@@ -6,8 +6,8 @@
       🚀 Connect SpringBoot & Flask
 
 ### Content
-  [1. ⚙️ Environment Settings](#-environment-Settings)  <br>
-  [2. 🏃🏻‍♀️ Run Flask Server](#-run-Flask-Server)  <br>
+  [1. ⚙️ Environment Settings](#%EF%B8%8F-environment-settings)  <br>
+  [2. 🏃🏻‍♀️ Run Flask Server](#%EF%B8%8F-run-flask-server)  <br>
   [3. 🍃 SpringBoot 연동 Test](#-springBoot-연동-Test)
 
 <br>
