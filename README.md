@@ -22,8 +22,11 @@
 <br>
   
   **2. VSC settings > python.python path 검색** <br>
-  * _Python: Default Interpreter Path = (C:\Python37) 지정 - 1. 설치 경로_ <br>
+  * _Python: Default Interpreter Path = (C:\Python37) 지정 - 1. 파이썬 설치 경로_ <br>
+  	![image](https://github.com/Jhyunee/for-me-classification/assets/104143072/806d9252-8df9-4bdd-a6c4-04881a5262a2)
+
   * `$ python -V # 3.7.9 ` ✅
+
 
 <br>
   
