@@ -8,7 +8,7 @@
 ### Content
   [1. ⚙️ Environment Settings](#%EF%B8%8F-environment-settings)  <br>
   [2. 🏃🏻‍♀️ Run Flask Server](#%EF%B8%8F-run-flask-server)  <br>
-  [3. 🍃 SpringBoot 연동 Test](#-springBoot-연동-Test)
+  [3. 🍃 SpringBoot 연동 Test](#-springboot-연동-test)
 
 <br>
 <br>
@@ -133,6 +133,8 @@
             return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
    ```
 
+<br>
+
 **2. 파란 라인 경로 따라가서 해당 파일 복사 → test 파일 내에 붙이기**
   ![image](https://github.com/Jhyunee/for-me-classification/assets/104143072/0a22f303-c8c1-4804-9c9e-c6fe09426ecb)
   * test 파일 외 다른 곳에 위치시키고 싶다면 위의 except문 path 수정!
@@ -142,31 +144,32 @@
 <br>
 
 ## 🍃 SpringBoot 연동 Test
-  * Flask ➡️ SpringBoot 데이터 받아오기
+  * Flask ↔️ SpringBoot 데이터 주고 예측값 받기
 
-  **1. Flask 서버 켜서 카테고리 예측값 띄우기**
+  **1. Flask 서버 켜기**
   * 가상환경 실행
   * app.py 실행
-  * `localhost:5000/test` 접속
+  * 확인 : `localhost:5000`
 
-  **2. [for-me-classification/springtest](https://github.com/Jhyunee/for-me-classification/tree/main/springtest)**
-  * 위 디렉토리의 테스트 코드 받아서 for-me 프로젝트에 넣기 <br>
-      `TestController.java  # directory = controller\TestController.java` <br>
-      `FlaskClientService.java  # directory = service\FlaskClientService.java`
-  
-  **3. [for-me](https://github.com/ongsim0629/for-me) Spring 서버 켜기 (Backend)**
-  * Run `SpringDeveloperApplication.java`
-  * `localhost:8080/flasktest` 접속
+<br>
+
+  **2. [for-me](https://github.com/ongsim0629/for-me) Spring 서버 켜기 (Backend)**
+  * `localhost:8080/api/checklists` 에 데이터 POST (postman 이용) <br>
+  ```
+	{
+		"name": # YOUR_CHECKLIST_TEST_DATA
+		"user_id": # YOUR_TEST_ID
+	}
+  ```
 
 <br>
 
   ### 👏🏻 All Succeeded !
-  ![image](https://github.com/Jhyunee/for-me-classification/assets/104143072/f57631dc-6154-4f1e-a33f-7f76d8dbb237)
+  * **Spring ➡️ Flask 보낸 데이터 확인** 
+    `>>> Data from Springboot : # YOUR_CHECKLIST_TEST_DATA`
 
-
-
-
-
-
-
-  
+  * **Flask ➡️ Spring 받은 예측값 확인**
+    `"category": # YOUR_PREDICT_RESULT`
+    * 예측값은 `localhost:5000/send` 에서도 확인 가능
+    
+    ![image](https://github.com/Jhyunee/for-me-classification/assets/104143072/82841d87-750b-429e-8849-985abec34e47)
