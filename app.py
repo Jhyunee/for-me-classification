@@ -5,7 +5,7 @@ from model import predict  # model.py에서 predict 함수 가져오기
 import model
 
 from flask import Flask, request, render_template
-import boto3, json
+import json
 from werkzeug.utils import secure_filename
 from socket import *
 
