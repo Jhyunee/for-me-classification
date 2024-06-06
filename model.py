@@ -224,7 +224,7 @@ vocab = nlp.vocab.BERTVocab.from_sentencepiece(tokenizer.vocab_file, padding_tok
 
 model = BERTClassifier(bertmodel,  dr_rate = 0.5)
 
-model.load_state_dict(torch.load('C:\\KGU\\model\\test\\1_made_test_state.pt'), strict=False)
+model.load_state_dict(torch.load('C:\\KGU\\model\\test\\3250_made_test_state.pt'), strict=False)
 
 
 def predict(predict_sentence):
